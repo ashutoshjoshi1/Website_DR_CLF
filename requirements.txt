@@ -1,4 +1,3 @@
-ABE @ file:///Users/ashutoshjoshi/Desktop/ABE
 absl-py==0.13.0
 aiohttp==3.8.1
 aiosignal==1.2.0
