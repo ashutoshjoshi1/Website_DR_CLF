@@ -21,4 +21,4 @@ tensorboard-plugin-wit==1.6.0.post3
 tensorflow==2.7.0
 tensorflow-estimator==2.7.0
 tensorflow-io-gcs-filesystem==0.22.0
-
+streamlit==0.61.0
