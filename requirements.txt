@@ -2,5 +2,4 @@ h5py==3.1.0
 numpy==1.19.5
 pilkit==2.0
 Pillow==7.0.0
-tensorflow==2.7.0
 streamlit==0.61.0
