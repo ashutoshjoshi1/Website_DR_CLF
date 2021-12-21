@@ -27,7 +27,7 @@ def import_and_predict(image_data, model):
     
     return prediction
 
-model = tf.keras.models.load_model('bestmodel.h5')
+model = tf.keras.models.load_model('full_retina_model.h5')
 
 st.write("""
          # Diabetic-Retinopathy Classifier
@@ -45,7 +45,7 @@ P_ID = st.text_input("Enter Unique ID")
 
 Pres = st.text_input("Enter Prescription")
 
-file = st.file_uploader("Please upload an image file. Note: Image dim (400,400)", type=["jpg", "png","tif"])
+file = st.file_uploader("Please upload an image file. Note: Image dim (400,400)", type=["jpg","jpeg", "png","tif"])
 #
 
 
