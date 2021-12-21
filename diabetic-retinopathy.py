@@ -27,7 +27,7 @@ def import_and_predict(image_data, model):
     
     return prediction
 
-model = tf.keras.models.load_model('full_retina_model.h5')
+model = tf.keras.models.load_model('bestmodel.h5')
 
 st.write("""
          # Diabetic-Retinopathy Classifier
@@ -64,7 +64,7 @@ else:
     with open(os.path.join("tempDir",P_ID),"wb") as f: 
         f.write(file.getbuffer())         
     st.write("Saved File")
-    if np.argmax(prediction) == 0:
+    if prediction[0][0] >= 0.995:
         st.success("No DR")
     # elif np.argmax(prediction) == 1:
     #     st.write("One : Mild")
@@ -77,3 +77,4 @@ else:
     
     st.text(Pres)
     # st.write(prediction)
+    # st.write((prediction[0][0]))
